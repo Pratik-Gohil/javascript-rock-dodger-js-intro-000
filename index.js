@@ -114,6 +114,9 @@ function moveDodger(e) {
   if (e.which === LEFT_ARROW) {
     moveDodgerLeft()
   }
+  if (e.which === LEFT_ARROW) {
+    moveDodgerLeft()
+  }
 }
 
 function moveDodgerLeft() {
