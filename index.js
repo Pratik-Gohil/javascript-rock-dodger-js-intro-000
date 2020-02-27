@@ -93,21 +93,11 @@ function createRock(x) {
 
   window.requestAnimationFrame(moveRock);
 
-
-  // Add the rock to ROCKS so that we can remove all rocks
-  // when there's a collision.
   ROCKS.push(rock)
 
-  // Finally, return the rock element you've created.
   return rock
 }
 
-/**
- * End the game by clearing `gameInterval`,
- * removing all ROCKS from the DOM,
- * and removing the `moveDodger` event listener.
- * Finally, alert "YOU LOSE!" to the player.
- */
 function endGame() {
   document.removeEventListener('keydown', moveDodger);
   window.clearInterval(gameInterval);
